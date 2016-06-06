@@ -29,15 +29,15 @@ for(var i=0; i < input.length; i++){
 var backwardsArray =[];
 
 //starts at the end of the word and decrements the word each time loop runs through
-for(var i = input.length-1; i >= 0; i--){
+for(var p = input.length-1; p >= 0; p--){
 //pushes letters to emptu array called backwardsArray
-	backwardsArray.push(input[i]);
+	backwardsArray.push(input[p]);
 
 }
 
 
 //compares backwardsArray with letterArray
-if(letterArray === backwardsArray){
+if(letterArray.toString() === backwardsArray.toString()){
 	console.log(input + " is a palidrome");
 }else{
 	console.log(input + " is not a palidrome");
